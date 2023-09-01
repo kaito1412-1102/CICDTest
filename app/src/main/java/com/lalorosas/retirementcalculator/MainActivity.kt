@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         AppCenter.start(application, "75de2b61-8dd1-4691-a313-8628e5c9fcd2", Analytics::class.java, Crashes::class.java);
         Log.d("TAG", "onCreate: ")
+        Log.d("TAG", "onCreate: ")
         calculateButton.setOnClickListener {
             // Crashes.generateTestCrash()
             try {
