@@ -2,6 +2,7 @@ package com.lalorosas.retirementcalculator
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.microsoft.appcenter.AppCenter
 import com.microsoft.appcenter.analytics.Analytics
 import com.microsoft.appcenter.crashes.Crashes
@@ -14,7 +15,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         AppCenter.start(application, "75de2b61-8dd1-4691-a313-8628e5c9fcd2", Analytics::class.java, Crashes::class.java);
-
+        Log.d("TAG", "onCreate: ")
+        Log.d("TAG", "onCreate: ")
         calculateButton.setOnClickListener {
             // Crashes.generateTestCrash()
             try {
