@@ -32,6 +32,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
+    val viewModel = MainViewModel()
     Text(
         text = "Hello $name!",
         modifier = modifier
