@@ -24,3 +24,11 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
+
+    - name: Build with coverage
+      run: ./gradlew test jacocoTestReport
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        file: build/reports/jacoco/test/jacocoTestReport.xml
+
