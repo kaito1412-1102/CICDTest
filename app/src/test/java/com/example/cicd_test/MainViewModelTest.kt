@@ -13,7 +13,7 @@ class MainViewModelTest {
 
     @Test
     fun testCheckValue_oddNumber_returnsFalse() {
-        val result = viewModel.checkValue(3)
+        val result = viewModel.checkValue(2)
         assert(!result)
     }
 }
