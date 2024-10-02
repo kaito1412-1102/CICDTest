@@ -32,6 +32,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
+    val viewModel = MainViewModel()
     Text(
         text = "Hello $name!",
         modifier = modifier
@@ -42,6 +43,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     CICD_TestTheme {
-        Greeting("Android")
+        Greeting("Android CI")
     }
 }
